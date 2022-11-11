@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { name: string } }) {
   const img = sprites.other.home.front_default;
 
   return (
-    <div>
+    <div className="max-w-lg">
       <h1 className="text-3xl capitalize">{name}</h1>
       <Image alt={`Artwork for ${name}`} src={img} height={1000} width={1000} />
     </div>
