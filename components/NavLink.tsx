@@ -16,7 +16,7 @@ export default function NavLink({ href, children }: Props) {
 
   return (
     <Link
-      className={`${active ? "underline" : ""} hover:underline`}
+      className={`${active ? "underline" : ""} hover:underline p-1`}
       href={href}
     >
       {children}

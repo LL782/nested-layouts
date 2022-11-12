@@ -14,7 +14,7 @@ export default function Layout({ children }: Props) {
     <div className="flex">
       <ul className="pr-10 text-sm">
         {results.map(({ name }, i) => (
-          <li key={`${name}_${i}`} className="capitalize">
+          <li key={`${name}_${i}`} className="uppercase mb-2">
             <NavLink href={`/pokemon/${name}`}>{name}</NavLink>
           </li>
         ))}
