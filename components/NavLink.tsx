@@ -15,7 +15,10 @@ export default function NavLink({ href, children }: Props) {
   const active = `${segment || ""}` === urlLeaf;
 
   return (
-    <Link className={active ? "underline" : ""} href={href}>
+    <Link
+      className={`${active ? "underline" : ""} hover:underline`}
+      href={href}
+    >
       {children}
     </Link>
   );
