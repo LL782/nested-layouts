@@ -24,6 +24,7 @@ export default function Page() {
           See the source code for details
         </Link>
       </p>
+      <p>Select options from the nav to demo it.</p>
     </div>
   );
 }
